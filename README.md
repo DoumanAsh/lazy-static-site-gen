@@ -29,14 +29,14 @@ static-site-gen
 
 - package.json - npm settings with all required dependencies for this skeleton.
 - .jshintrc - settings for great lint tool [JSHint](http://jshint.com/). Each build runs it using these settings.
-- _app_ - contains everything that's going to be build.
-    - assets - Everything inside is copied as it is.
-    - js - Contains JS code that will be concatenated into `js/app.js`
+- **app** - contains everything that's going to be build.
+    - **assets** - Everything inside is copied as it is.
+    - **js** - Contains JS code that will be concatenated into `js/app.js`
         - Each js file will be available as separated module which can be loaded via `require`
-    - static_jade - Contains **JADE** templates.
+    - **static_jade** - Contains **JADE** templates.
         - `index.jade` - Will be parsed into `index.html`
         - `_head.jade` - Will be ignored, but can be included by other templates. Files starting with `_` are ignored.
-    - styles - Contains _stylus_ CSS templates which are concatenated into `style.css`
+    - **styles** - Contains _stylus_ CSS templates which are concatenated into `style.css`
 
 ## Usage
 
