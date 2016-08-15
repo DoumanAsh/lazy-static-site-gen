@@ -27,6 +27,9 @@ module.exports = {
             pattern: /^app(\/|\\)js(\/|\\)[^\/\\]*\.js$/,
             warnOnly: true
         },
-        npm: ['babel-brunch']
     },
+    npm: {
+        compilers: ['babel-brunch']
+    },
+    sourceMaps: 'absoluteUrl'
 }

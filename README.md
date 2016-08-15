@@ -33,15 +33,16 @@ static-site-gen
     - **assets** - Everything inside is copied as it is.
     - **js** - Contains JS code that will be concatenated into `js/app.js`
         - Each js file will be available as separated module which can be loaded via `require`
-    - **static_jade** - Contains **JADE** templates.
+    - **styles** - Contains _stylus_ CSS templates which are concatenated into `style.css`
+    - **static_jade** - Contains [Jade](http://jade-lang.com/) templates.
         - `index.jade` - Will be parsed into `index.html`
         - `_head.jade` - Will be ignored, but can be included by other templates. Files starting with `_` are ignored.
-    - **styles** - Contains _stylus_ CSS templates which are concatenated into `style.css`
+    - **styles** - Contains [Stylus](https://github.com/stylus/stylus) CSS templates which are concatenated into `style.css`.
 
 ## Usage
 
 - Fill it with content!
 - Run server to preview site with command `npm start`
-- Once satisfied build your site with `npm build`
+- Once satisfied build your site with `brunch build --production`
 - Post it on github pages or wherever you want!
 - PROFIT!
